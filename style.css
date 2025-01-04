@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: rgb(0, 0, 15);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color: rgb(18, 18, 62);
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease, font-size 0.3s ease;
+  position: relative;
+
+  &:hover {
+    color: rgb(153, 153, 226);
+    font-size: 1.02rem;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: rgb(153, 153, 226);
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+  }
+  &:hover::after {
+    width: 100%;
+  }
+}
+.left {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.firstSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 150px 0;
+}
+.firstSection > div {
+  width: 30%;
+}
+.leftSection {
+  font-size: 3rem;
+}
+.leftSection .buttons {
+  padding: 50px 0;
+}
+.leftSection .btn {
+  padding: 12px;
+  background-color: #1e2167;
+  color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  font-size: 20px;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+
+  &:hover {
+    background-color: white;
+    color: #1e2167;
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+}
+.rightSection img {
+  width: 120%;
+}
+.purple {
+  color: rgb(170, 110, 230);
+}
+#element {
+  color: rgb(170, 110, 230);
+}
+.secondSection {
+  max-width: 80vw;
+  margin: auto;
+  height: 80vh;
+}
+main hr {
+  border: 0;
+  background: #9c97f1;
+  height: 1.2px;
+  margin: 60px 84px;
+}
+.secondSection h1 {
+  font-size: 1.9rem;
+}
+.text-gray {
+  color: rgb(170, 170, 170);
+}
+.secondSection .box {
+  background: white;
+  width: 77vw;
+  height: 2px;
+  margin: 56px 0;
+  display: flex;
+}
+.secondSection .vertical {
+  height: 93px;
+  width: 1px;
+  background-color: white;
+  margin: 0 140px;
+  position: relative;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: rgb(153, 153, 226);
+  }
+}
+.image-top {
+  width: 29px;
+  position: relative;
+  top: -32px;
+  left: -9px;
+}
+.vertical-title {
+  position: relative;
+  top: 75px;
+  width: 150px;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+.vertical-desc {
+  position: relative;
+  top: 86px;
+  color: gray;
+  font-size: 10.5px;
+  width: 150px;
+  transition: color 0.3s ease;
+}
+.vertical:hover .vertical-title {
+  color: rgb(153, 153, 226);
+}
+
+.vertical:hover .vertical-desc {
+  color: white;
+}
+footer {
+  background-color: #0e0e10;
+}
+.footer {
+  display: flex;
+  margin: 23px 122px;
+  justify-content: space-evenly;
+}
+.footer ul {
+  list-style: none;
+}
+.footer ul li {
+  margin: 10px 0;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: rgb(153, 153, 226);
+    cursor: pointer;
+  }
+}
+.footer > div {
+  width: 223px;
+}
+footer .footer-rights {
+  color: gray;
+  font-size: 12px;
+  padding: 12px 0;
+  text-align: center;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  12.5% {
+    transform: rotate(90deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  37.5% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  62.5% {
+    transform: rotate(270deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  87.5% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #1e2167;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 3s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: opacity 0.5s ease;
+}
+
+:root {
+  --bg-color: rgb(0, 0, 15);
+  --text-color: white;
+  --nav-bg-color: rgb(18, 18, 62);
+  --accent-color: rgb(153, 153, 226);
+}
+
+[data-theme="light"] {
+  --bg-color: white;
+  --text-color: rgb(0, 0, 15);
+  --nav-bg-color: rgb(240, 240, 240);
+  --accent-color: rgb(18, 18, 62);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+nav {
+  background-color: var(--nav-bg-color);
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kushagra-Developer portfolio</title>
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/ddgqnimxd/image/upload/v1735850987/icon_favicon_a4zia9.webp"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="loader"></div>
+    <!-- Loader added here -->
+    <header>
+      <nav>
+        <button id="theme-toggle">🌙</button>
+        <div class="left">Kushagra's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi! My name is
+          <span class="purple">Kushagra</span>
+          <div>and I am passionate</div>
+          <span id="element"></span>
+          <div class="buttons">
+            <button class="btn">Download Resume</button>
+            <button class="btn">Visit Github</button>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="dev img.png" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection">
+        <span class="text-gray">What I have done so far</span>
+        <h1>Work Experience</h1>
+
+        <div class="box">
+          <div class="vertical">
+            <img
+              class="image-top"
+              src="https://res.cloudinary.com/ddgqnimxd/image/upload/v1735898806/Developer_image_gsqbt7.png"
+              alt=""
+            />
+            <div class="vertical-title">Web Developer</div>
+            <div class="vertical-desc">
+              I have worked as a Web Developer for 2 years. I have worked on
+              many projects and have a good experience in this field.
+            </div>
+          </div>
+          <div class="vertical">
+            <img
+              class="image-top"
+              src="https://res.cloudinary.com/ddgqnimxd/image/upload/v1735902266/web_designer_image_kjrtln.png"
+              alt=""
+            />
+            <div class="vertical-title">Web Designer</div>
+            <div class="vertical-desc">
+              I have worked as a Web Designer for 2 years. I have worked on many
+              projects and have a good experience in this field.
+            </div>
+          </div>
+          <div class="vertical">
+            <img
+              class="image-top"
+              src="https://res.cloudinary.com/ddgqnimxd/image/upload/v1735904310/freelancer_image_wzoyyz.jpg"
+              alt=""
+            />
+            <div class="vertical-title">Freelancer</div>
+            <div class="vertical-desc">
+              I have worked as a Freelancer for 2 years. I have worked on many
+              projects and have a good experience in this field.
+            </div>
+          </div>
+          <div class="vertical">
+            <img
+              class="image-top"
+              src="https://res.cloudinary.com/ddgqnimxd/image/upload/v1735904016/mobile-dev_image_p5npzo.png"
+              alt=""
+            />
+            <div class="vertical-title">Mobile App Developer</div>
+            <div class="vertical-desc">
+              I have worked as a Mobile App Developer for 2 years. I have worked
+              on many projects and have a good experience in this field.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Kushagra's Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+            <li>Projects</li>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+            <li>Projects</li>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+            <li>Projects</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-rights">
+        Copyright &copy kushagraportfolio.com | All rights reserved
+      </div>
+    </footer>
+
+
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Developer",
+          "&amp; Web Designer",
+          "Freelancer",
+          "Mobile App Developer.",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
