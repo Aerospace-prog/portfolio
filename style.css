@@ -10,6 +10,12 @@ body {
   color: white;
   font-family: "Poppins", sans-serif;
 }
+h1, h2, h3 {
+  font-weight: 700;
+}
+p {
+  font-weight: 300;
+}
 nav {
   display: flex;
   justify-content: space-around;
@@ -69,6 +75,8 @@ nav ul li a {
   padding: 50px 0;
 }
 .leftSection .btn {
+  position: relative;
+  overflow: hidden;
   padding: 12px;
   background-color: #1e2167;
   color: white;
@@ -84,6 +92,26 @@ nav ul li a {
     cursor: pointer;
     transform: scale(1.05);
   }
+}
+.btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+.btn:hover::after {
+  width: 300px;
+  height: 300px;
+}
+.btn > .btn{
+  border: none;
+  background: transparent;
 }
 .rightSection img {
   width: 120%;
@@ -261,4 +289,17 @@ nav {
   background-color: transparent;
   cursor: pointer;
   
+}
+
+@media (max-width: 768px) {
+  .firstSection {
+    flex-direction: column;
+    margin: 50px 0;
+  }
+  .leftSection, .rightSection {
+    width: 90%;
+  }
+  .rightSection img {
+    width: 100%;
+  }
 }
