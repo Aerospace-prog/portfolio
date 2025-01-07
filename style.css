@@ -87,14 +87,21 @@ nav ul li a {
   text-decoration: none;
 
   &:hover {
-    background-color: white;
+    background-color: rgb(255, 255, 255,0.5);
     color: #1e2167;
     cursor: pointer;
     transform: scale(1.05);
   }
 }
-.btn::after {
-  content: '';
+.btn:hover::after {
+  width: 300px;
+  height: 300px;
+}
+.btn > .btn{
+  border: none;
+  background: transparent;
+}
+.leftSection .ripple {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -105,13 +112,10 @@ nav ul li a {
   transform: translate(-50%, -50%);
   transition: width 0.6s ease, height 0.6s ease;
 }
-.btn:hover::after {
+
+.leftSection .btn:hover .ripple {
   width: 300px;
   height: 300px;
-}
-.btn > .btn{
-  border: none;
-  background: transparent;
 }
 .rightSection img {
   width: 120%;
