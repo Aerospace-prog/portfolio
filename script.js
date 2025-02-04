@@ -12,3 +12,8 @@ window.addEventListener("load", function () {
       loader.style.display = "none";
     }, 500);
   });
+
+  const googleDocLink = "https://docs.google.com/document/d/1PBQT2L-1Lf7kvmvA4XyEHYDBo8XWso3tYCPjd5WXtvU/export?format=pdf";
+  function openPdf() {
+    window.open(googleDocLink, "_blank");
+}
